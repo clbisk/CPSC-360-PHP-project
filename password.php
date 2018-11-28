@@ -3,6 +3,8 @@
 <?php
 $password = $_POST['password'];
 
+echo( $password);
+
 $db = new mysqli('localhost', 'wordsroot', $password, 'words');
 
 if ($db-> connect_errno) {
