@@ -7,6 +7,8 @@
 @import url(iwords.css);
 </style>
 
+<?php include 'password.php ?>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script language=JavaScript>
@@ -115,19 +117,10 @@ function post( file, map ) {
 
 </body>
 
+
 <script>
 var home = document.getElementsByClassName('tablinks')[0];
 home.click();
 </script>
-
-<?php
-
-$db = new mysqli('localhost', 'wordsuser', 'password', 'words');
-
-if ($db->connect_errno) {
-	
-}
-
-?>
 
 </html>
