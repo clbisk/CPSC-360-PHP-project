@@ -11,4 +11,6 @@ if ($db-> connect_errno) {
 	echo("Hello");
 }
 
+?>
+
 </body></html>
