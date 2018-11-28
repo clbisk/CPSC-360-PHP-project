@@ -5,7 +5,8 @@ $password = $_POST['password'];
 
 echo( $password);
 
-$db = new mysqli('localhost', 'wordsroot', $password, 'words');
+$dbread = new mysqli('localhost', 'wordsuser', 'anonymous', 'words');
+$dbwrite = new mysqli('localhost', 'wordsroot', $password, 'words');
 
 if ($db-> connect_errno) {
 	echo("Can't connect");
